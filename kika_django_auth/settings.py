@@ -13,7 +13,8 @@ SECRET_KEY = 'ue#e@7j7mi@k6!5ivy6s4dbrs8)r)z&t19^k1cs5w5&8j*k2o)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost',
+                 'kika-django-auth.herokuapp.com']
 
 
 # Application definition
