@@ -24,17 +24,19 @@
         </ul>
     </nav>
 
-    <h1>{% block page_heading %} {% endblock %}</h1>
+    <div class="container">
+        <h1>{% block page_heading %} {% endblock %}</h1>
 
-    {% if messages %}
-    <div>
-        {% for message in messages %}
-            {{ message }}
-        {% endfor %}
-    </div>
-    {% endif %}
+        {% if messages %}
+        <div>
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        </div>
+        {% endif %}
 
-    {% block content %}{% endblock %}
+        {% block content %}{% endblock %}
+    </div> <!-- container -->
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
